@@ -104,7 +104,8 @@ public class mapa extends javax.swing.JFrame  {
          evt.getX() > 342 && evt.getX() < 411  && evt.getY() > 265 && evt.getY() < 304){
           Imagen.setIcon(imagenes[1]);
       } 
-      else if(evt.getX() > 158 && evt.getX() < 288  && evt.getY() > 44 && evt.getY() < 103){
+      else if(evt.getX() > 158 && evt.getX() < 288  && evt.getY() > 44 && evt.getY() < 103 ||
+              evt.getX() > 216 && evt.getX() < 296  && evt.getY() > 102 && evt.getY() < 196){
            Imagen.setIcon(imagenes[2]);   
       }
        else if(evt.getX() > 294 && evt.getX() < 345  && evt.getY() > 71 && evt.getY() < 160){
