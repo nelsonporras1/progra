@@ -100,16 +100,35 @@ public class mapa extends javax.swing.JFrame  {
           Component source= (Component) evt.getSource();
       
    
-      if( evt.getX() > 24 && evt.getX() < 176  && evt.getY() > 100 && evt.getY() < 169){
-          
-      Imagen.setIcon(imagenes[5]);   
-      
+      if(evt.getX() > 236 && evt.getX() < 313  && evt.getY() > 205 && evt.getY() < 242 ||
+         evt.getX() > 342 && evt.getX() < 411  && evt.getY() > 265 && evt.getY() < 304){
+          Imagen.setIcon(imagenes[1]);
       } 
       else if(evt.getX() > 158 && evt.getX() < 288  && evt.getY() > 44 && evt.getY() < 103){
            Imagen.setIcon(imagenes[2]);   
       }
+       else if(evt.getX() > 294 && evt.getX() < 345  && evt.getY() > 71 && evt.getY() < 160){
+          Imagen.setIcon(imagenes[3]);
+      }
       else if(evt.getX() > 326 && evt.getX() < 421  && evt.getY() > 194 && evt.getY() < 247){
           Imagen.setIcon(imagenes[4]);
+      }
+      else if( evt.getX() > 24 && evt.getX() < 176  && evt.getY() > 100 && evt.getY() < 169){ 
+          Imagen.setIcon(imagenes[5]);   
+      }
+      else if(evt.getX() > 355 && evt.getX() < 398  && evt.getY() > 88 && evt.getY() < 184 ||
+              evt.getX() > 403 && evt.getX() < 457  && evt.getY() > 159 && evt.getY() < 193  || 
+              evt.getX() > 439 && evt.getX() < 500  && evt.getY() > 197 && evt.getY() < 295){
+          Imagen.setIcon(imagenes[7]);
+      }
+      else if(evt.getX() > 382 && evt.getX() < 416  && evt.getY() > 327 && evt.getY() < 421 ||
+              evt.getX() > 416 && evt.getX() < 472 && evt.getY() > 300 && evt.getY() < 384  || 
+              evt.getX() > 473 && evt.getX() < 508  && evt.getY() > 328 && evt.getY() < 435 ||
+              evt.getX() > 259 && evt.getX() < 313 && evt.getY() >  252 && evt.getY() <  278 || 
+              evt.getX() > 208 && evt.getX() < 223  && evt.getY() > 214 && evt.getY() < 252 ||
+              evt.getX() > 175 && evt.getX() < 212 && evt.getY() > 155 && evt.getY() < 201  || 
+              evt.getX() > 119 && evt.getX() < 168  && evt.getY() > 196 && evt.getY() < 242){
+          Imagen.setIcon(imagenes[6]);
       }
       
     }//GEN-LAST:event_ImagenMouseMoved
